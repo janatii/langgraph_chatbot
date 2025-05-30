@@ -1,5 +1,7 @@
 # Emotionally and Logically Adaptive Chatbot
 
+> **Note:** This project was created to get familiar with LangGraph and Langchain.
+
 This project is a Python chatbot that uses LangChain, LangGraph, and Anthropic's Claude model to provide responses tailored to the user's needs. The chatbot automatically classifies each user message as requiring either an emotional (therapist-style) or logical (fact-based) response, and routes the conversation accordingly.
 
 ## Architecture
@@ -14,7 +16,10 @@ This project is a Python chatbot that uses LangChain, LangGraph, and Anthropic's
 
 ## Usage
 1. Install dependencies in a Python 3.12+ environment (see `pyproject.toml`).
-2. Set your Anthropic API key and any other required environment variables in a `.env` file.
+2. Set your Anthropic API key and any other required environment variables in a `.env` file. You must have a line like this in your `.env`:
+   ```env
+   ANTHROPIC_API_KEY=your-anthropic-api-key-here
+   ```
 3. To run the chatbot in the terminal:
    ```bash
    python main.py
