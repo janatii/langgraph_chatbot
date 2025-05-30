@@ -15,11 +15,16 @@ This project is a Python chatbot that uses LangChain, LangGraph, and Anthropic's
 ## Usage
 1. Install dependencies in a Python 3.12+ environment (see `pyproject.toml`).
 2. Set your Anthropic API key and any other required environment variables in a `.env` file.
-3. Run the chatbot:
+3. To run the chatbot in the terminal:
    ```bash
    python main.py
    ```
-4. Type your message and the assistant will reply appropriately.
+4. To run the web API and chat UI:
+   ```bash
+   python api.py
+   ```
+5. Open your browser and go to [http://localhost:8000](http://localhost:8000) to use the web chat interface.
+6. Type your message and the assistant will reply appropriately.
 
 ## Requirements
 - Python 3.12+
