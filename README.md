@@ -1,4 +1,4 @@
-# Langchain2: Emotionally and Logically Adaptive Chatbot
+# Emotionally and Logically Adaptive Chatbot
 
 This project is a Python chatbot that uses LangChain, LangGraph, and Anthropic's Claude model to provide responses tailored to the user's needs. The chatbot automatically classifies each user message as requiring either an emotional (therapist-style) or logical (fact-based) response, and routes the conversation accordingly.
 
