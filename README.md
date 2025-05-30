@@ -2,6 +2,10 @@
 
 This project is a Python chatbot that uses LangChain, LangGraph, and Anthropic's Claude model to provide responses tailored to the user's needs. The chatbot automatically classifies each user message as requiring either an emotional (therapist-style) or logical (fact-based) response, and routes the conversation accordingly.
 
+## Architecture
+
+![LangGraph Chatbot Architecture](langgraph_chatbot.png)
+
 ## Features
 - **Message Classification:** Uses an LLM to determine if a message needs an emotional or logical reply.
 - **Therapist Agent:** Responds with empathy and emotional support for personal or sensitive topics.
