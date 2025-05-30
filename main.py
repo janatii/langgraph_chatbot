@@ -82,7 +82,7 @@ def logical_agent(state: State):
         {"role": "user", "content": last_message.content}
     ]
     reply = llm.invoke(messages)
-    return {"messages": [{"role": "assistant", content: reply.content}]}
+    return {"messages": [{"role": "assistant", "content": reply.content}]}
 
 
 
