@@ -28,8 +28,22 @@ This project is a Python chatbot that uses LangChain, LangGraph, and Anthropic's
    ```bash
    python api.py
    ```
-5. Open your browser and go to [http://localhost:8000](http://localhost:8000) to use the web chat interface.
-6. Type your message and the assistant will reply appropriately.
+5. **To run with Docker:**
+   - Build and start the app with Docker Compose:
+     ```bash
+     docker compose up --build
+     ```
+   - Or pull the prebuilt image from GHCR:
+     ```bash
+     docker pull ghcr.io/janatii/langgraph_chatbot:latest
+     ```
+     Then run:
+     ```bash
+     docker run --env-file .env -p 8000:8000 ghcr.io/janatii/langgraph_chatbot:latest
+     ```
+6. Open your browser and go to [http://localhost:8000](http://localhost:8000) to use the web chat interface.
+7. Type your message and the assistant will reply appropriately.
+
 
 ## Requirements
 - Python 3.12+
