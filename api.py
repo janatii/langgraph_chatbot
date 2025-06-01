@@ -56,4 +56,8 @@ def index():
         return HTMLResponse(f.read())
 
 if __name__ == "__main__":
-    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True)
+    # For local development, you can still use uvicorn
+    import sys
+    if "runserver" in sys.argv:
+        import uvicorn
+        uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True)

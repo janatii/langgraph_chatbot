@@ -1,0 +1,12 @@
+services:
+  chatbot:
+    build: .
+    container_name: langgraph-chatbot
+    env_file:
+      - .env
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
